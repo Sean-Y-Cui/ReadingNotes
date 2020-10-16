@@ -1,0 +1,25 @@
+% tips on compiling:
+% command: XeLaTeX-MakeIdx-Biber-XeLaTeX-XeLaTeX
+% Don't know why but this compilation routine works.
+
+\documentclass{article}
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage[backend=biber,sorting=none,style=numeric,maxbibnames=99]{biblatex}
+\makeindex
+\addbibresource{GeneralLibrary/GeneralLib.bib}
+
+\begin{document}
+	
+
+\include{ReadingNotes_SolidMechanics}
+\include{ReadingNotes_SBFEM}
+\include{ReadingNotes_HPC}
+\include{ReadingNotes_FractureMechanics}
+
+
+
+
+\printindex
+\printbibliography
+
+\end{document}
